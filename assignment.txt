@@ -190,3 +190,18 @@ Username
 Password
 <password>
  
+GET
+ServiceNow_CreateTicket_QueryParameter_GET
+https://dev112771.service-now.com/api/now/table/incident?sysparm_limit=1&sys_id=1c741bd70b2322007518478d83673af3
+Make things easier for your teammates with a complete request description.
+Authorization
+Basic Auth
+Username
+<username>
+Password
+<password>
+Query Params
+sysparm_limit
+1
+sys_id
+1c741bd70b2322007518478d83673af3
