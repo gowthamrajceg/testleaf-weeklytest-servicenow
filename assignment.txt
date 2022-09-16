@@ -1,0 +1,192 @@
+Service now post request api found for my instance:
+POST https://dev112771.service-now.com/api/now/table/{tableName}
+Select table name Incident
+Post Request
+POST https://dev112771.service-now.com/api/now/table/incident
+
+HTTP Method / URI
+POST https://dev112771.service-now.com/api/now/table/incident
+Headers
+Acceptapplication/json
+Content-Typeapplication/json
+X-UserToken61960e5c970a1110600e3756f053af3e4b6b6653d94164ece4c096028f92071e2edebafd
+Request Body
+{"description":"my windows machine 192.168.1.2 not working since last monday","short_description":"windows issue"}
+Response
+Status code
+201 Created
+Execution time (ms)
+649
+Headers
+Cache-Controlno-cache,no-store,must-revalidate,max-age=-1
+Content-Encodinggzip
+Content-Typeapplication/json;charset=UTF-8
+DateFri, 16 Sep 2022 06:50:33 GMT
+Expires0
+Locationhttps://dev112771.service-now.com/api/now/table/incident/b82c46d0974a1110600e3756f053afb2
+Pragmano-store,no-cache
+ServerServiceNow
+Server-Timingsem_wait;dur=0, sesh_wait;dur=0
+Strict-Transport-Securitymax-age=63072000; includeSubDomains
+Transfer-Encodingchunked
+X-Content-Type-Optionsnosniff
+X-Is-Logged-Intrue
+X-Transaction-Idf02c42dc970a
+Response Body
+{
+  "result": {
+    "parent": "",
+    "made_sla": "true",
+    "caused_by": "",
+    "watch_list": "",
+    "upon_reject": "cancel",
+    "sys_updated_on": "2022-09-16 06:50:33",
+    "child_incidents": "0",
+    "hold_reason": "",
+    "origin_table": "",
+    "task_effective_number": "INC0010002",
+    "approval_history": "",
+    "number": "INC0010002",
+    "resolved_by": "",
+    "sys_updated_by": "admin",
+    "opened_by": {
+      "link": "https://dev112771.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+      "value": "6816f79cc0a8016401c5a33be04be441"
+    },
+    "user_input": "",
+    "sys_created_on": "2022-09-16 06:50:33",
+    "sys_domain": {
+      "link": "https://dev112771.service-now.com/api/now/table/sys_user_group/global",
+      "value": "global"
+    },
+    "state": "1",
+    "route_reason": "",
+    "sys_created_by": "admin",
+    "knowledge": "false",
+    "order": "",
+    "calendar_stc": "",
+    "closed_at": "",
+    "cmdb_ci": "",
+    "delivery_plan": "",
+    "contract": "",
+    "impact": "3",
+    "active": "true",
+    "work_notes_list": "",
+    "business_service": "",
+    "business_impact": "",
+    "priority": "5",
+    "sys_domain_path": "/",
+    "rfc": "",
+    "time_worked": "",
+    "expected_start": "",
+    "opened_at": "2022-09-16 06:50:33",
+    "business_duration": "",
+    "group_list": "",
+    "work_end": "",
+    "caller_id": "",
+    "reopened_time": "",
+    "resolved_at": "",
+    "approval_set": "",
+    "subcategory": "",
+    "work_notes": "",
+    "universal_request": "",
+    "short_description": "windows issue",
+    "close_code": "",
+    "correlation_display": "",
+    "delivery_task": "",
+    "work_start": "",
+    "assignment_group": "",
+    "additional_assignee_list": "",
+    "business_stc": "",
+    "cause": "",
+    "description": "my windows machine 192.168.1.2 not working since last monday",
+    "origin_id": "",
+    "calendar_duration": "",
+    "close_notes": "",
+    "notify": "1",
+    "service_offering": "",
+    "sys_class_name": "incident",
+    "closed_by": "",
+    "follow_up": "",
+    "parent_incident": "",
+    "sys_id": "b82c46d0974a1110600e3756f053afb2",
+    "contact_type": "",
+    "reopened_by": "",
+    "incident_state": "1",
+    "urgency": "3",
+    "problem_id": "",
+    "company": "",
+    "reassignment_count": "0",
+    "activity_due": "",
+    "assigned_to": "",
+    "severity": "3",
+    "comments": "",
+    "approval": "not requested",
+    "sla_due": "",
+    "comments_and_work_notes": "",
+    "due_date": "",
+    "sys_mod_count": "0",
+    "reopen_count": "0",
+    "sys_tags": "",
+    "escalation": "0",
+    "upon_approval": "proceed",
+    "correlation_id": "",
+    "location": "",
+    "category": "inquiry"
+  }
+}
+
+Automate the same through POSTMAN
+Check Authentication in postman and test and send request.
+INC0010003 is created
+
+Endpoint for Getting all incidents:
+GET https://dev112771.service-now.com/api/now/table/incident
+
+Endpoint for getting specific incident:
+GET https://dev112771.service-now.com/api/now/table/incident/1c741bd70b2322007518478d83673af3
+
+Endpoint for Delete specific incident
+DELETE https://dev112771.service-now.com/api/now/table/incident/d71da88ac0a801670061eabfe4b28f77
+
+PUT
+ServiceNow_CreateTicket_PUT
+https://dev112771.service-now.com/api/now/table/incident/1c741bd70b2322007518478d83673af3
+Make things easier for your teammates with a complete request description.
+Authorization
+Basic Auth
+Username
+<username>
+Password
+<password>
+Bodyraw (json)
+json
+{
+  "urgency": "3"
+}
+PATCH
+ServiceNow_CreateTicket_PATCH
+https://dev112771.service-now.com/api/now/table/incident/1c741bd70b2322007518478d83673af3
+Make things easier for your teammates with a complete request description.
+Authorization
+Basic Auth
+Username
+<username>
+Password
+<password>
+Bodyraw (json)
+json
+{
+  "sys_mod_count": "678"
+}
+DEL
+ServiceNow_CreateTicket_DELETE
+https://dev112771.service-now.com/api/now/table/incident/d71da88ac0a801670061eabfe4b28f77
+Make things easier for your teammates with a complete request description.
+Authorization
+Basic Auth
+Username
+<username>
+Password
+<password>
+ 
